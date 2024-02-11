@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section>
+    <div id="AC" class="w3-modal" style="display: block;">
+      <div class="w3-modal-content">
+        <div class="ACcontainer">
+          <div>
+            <input type="text" id="name" placeholder="name...">
+          </div>
+          <div class="characterDiv">
+            <canvas id="accanvas0"></canvas>
+          </div>
+          <!-- buttons -->
+          <div>
+            <button class="ACbut"
+              onclick="document.getElementById('ACdresser').style.display='block'">👚</button>
+            <button class="ACbut" onclick="document.getElementById('ACdresser').style.display='block'">🛒</button>
+            <button class="ACbut" onclick="document.getElementById('ACstats').style.display='block'">ℹ️</button>
+            <button id="downloadButAC" class="ACbut">⬇️</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="ACdresser" class="w3-modal" style="display: none;">
+      <div class="w3-modal-content">
+        <div class="ACcontainer">
+
+          <div style="text-align: right;">
+            <button class="ACclose"
+              onclick="document.getElementById('ACdresser').style.display='none'; closeFunction()">close</button>
+          </div>
+
+          <div class="emoDiv">
+            <p id="emo" style="font-size: 20px;"></p>
+          </div>
+
+          <div class="characterDiv">
+            <canvas id="canvas1"></canvas>
+            <canvas id="canvas2"></canvas>
+            <canvas id="canvas4"></canvas>
+            <canvas id="canvas3"></canvas>
+            <canvas id="canvas5"></canvas>
+          </div>
+
+          <div class="colors">
+            <div class="colorDiv">
+              <label for="colorPicker5">body</label>
+              <input type="color" id="colorPicker1">
+            </div>
+            <div class="colorDiv">
+              <label for="colorPicker5">eye</label>
+              <input type="color" id="colorPicker2">
+            </div>
+            <div class="colorDiv">
+              <label for="colorPicker5">shirt</label>
+              <input type="color" id="colorPicker3">
+            </div>
+            <div class="colorDiv">
+              <label for="colorPicker5">pants</label>
+              <input type="color" id="colorPicker4">
+            </div>
+            <div class="colorDiv">
+              <label for="colorPicker5">hair</label>
+              <input type="color" id="colorPicker5">
+            </div>
+            <div class="colorDiv">
+              <label for="colorPicker6">extra</label>
+              <input type="color" id="colorPicker6">
+            </div>
+          </div>
+
+          <div class="ACbottom">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'hair')">✂️</button>
+              <button class="tablinks" onclick="openCity(event, 'shirts')">👚</button>
+              <button class="tablinks" onclick="openCity(event, 'pants')">🩳</button>
+              <button class="tablinks" onclick="openCity(event, 'new')">📢</button>
+            </div>
+
+            <div id="hair" class="tabcontent">
+            </div>
+            <div id="shirts" class="tabcontent">
+            </div>
+            <div id="pants" class="tabcontent">
+            </div>
+            <div id="new" class="tabcontent">
+              <h2>more coming soon</h2>
+              <p>download for best quality</p>
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="ACstats" class="w3-modal" style="display: none;">
+      <div class="w3-modal-content">
+        <div class="ACcontainer">
+
+          <div style="text-align: right;">
+            <button class="ACclose" onclick="document.getElementById('ACstats').style.display='none'">close</button>
+          </div>
+          <div id="stats">
+            <p>🪪Name: <span id="inputted"></span></p>
+            <p>💵Money: <span id="money"></span></p>
+            <p>❤️Likes: <span id="likes"></span></p>
+            <p>💔Dislikes: <span id="dislikes"></span></p>
+            <p>🏢Job: <span id="job"></span></p>
+            <p>🎈Hobby: <span id="hobby"></span></p>️️️️️️️️️
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="AC.js"></script>
+</body>
+
+</html>

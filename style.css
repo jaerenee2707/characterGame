@@ -1,0 +1,216 @@
+html {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+.ACcontainer {
+  background-color: #f7dda6;
+  box-shadow: 1px 1px 3px #353a3b;
+  height: 90%;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.ACclose {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #ffc72e;
+  color: black;
+}
+
+.ACclose:hover {
+  background-color: #eeab1b;
+  box-shadow: 1px 1px #d3940d;
+}
+.ACbut {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #ffc72e;
+  color: black;
+  width: 19%;
+  height: 36px;
+  margin-left: 4%;
+  margin-top: 20px;
+}
+
+.ACbut:hover {
+  background-color: #eeab1b;
+  box-shadow: 1px 1px #d3940d;
+}
+.ACbottom {
+  width: 100%;
+}
+
+/* Style the tab */
+.tab {
+  float: none;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ffb30f;
+  background-color: #fcffeb;
+  overflow: hidden;
+  text-align: left;
+  font-size: 25px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  padding: 6px 12px;
+  width: 100%;
+  border: solid #ffc72e 1px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  float: left;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ffd270;
+}
+
+.tab button.active {
+  background-color: #eeab1b;
+}
+
+.tabcontent {
+  padding: 0px 12px;
+  border: 1px solid #eeab1b;
+  width: 100%;
+  height: 100px;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  align-items: center;
+}
+
+input[type="color"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.colors {
+  display: flex;
+  width: 100%;
+}
+
+.downloadDiv {
+  text-align: center;
+}
+
+.ACdownloadButton {
+  background-color: #ffc72e;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.ACdownloadButton:hover {
+  background-color: #eeab1b;
+  box-shadow: 1px 1px #d3940d;
+}
+
+.colorDiv {
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 18%;
+  text-align: center;
+}
+
+.characterDiv {
+  width: 100%;
+  height: 270px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emoDiv {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+#canvas1,
+#canvas2,
+#canvas3,
+#canvas4,
+#canvas5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  transform: translateX(-50%);
+}
+
+
+.rowAC div {
+  padding: 10px;
+  border: 1px solid #543030;
+  height: 80px;
+  width: 80px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.groupings img {
+  width: 70px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.rowAC {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rowAC div:hover {
+  background-color: #fef5d2;
+}
+
+.rowAC div.active {
+  background-color: #fed49a;
+}
+
+
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box
+}
+
+#name {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  padding-right: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#stats p{
+  padding-bottom: 10px;
+  font-size: 1.4em;
+}
